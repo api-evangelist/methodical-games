@@ -1,8 +1,17 @@
 aid: methodical-games
 name: Methodical Games
-description: Methodical Games is a company surfaced as a portfolio company of lightspeed-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Methodical Games is an independent AAA game development studio building
+  award-winning multiplayer games, describing itself as "built by developers,
+  for developers." Founded by veterans of Infinity Ward, Respawn Entertainment,
+  Epic Games and Santa Monica Studio, its lean team has shipped and shaped
+  franchises including Call of Duty, Titanfall, Apex Legends, Fortnite, Gears of
+  War and God of War Ragnarok. The studio emphasizes a developer-driven process
+  of fundamentals, quick iteration and collaboration to craft immersive,
+  long-lived multiplayer experiences. It was surfaced as a portfolio company of
+  Lightspeed Venture Partners and added to the API Evangelist network. As a game
+  studio it publishes no public developer API, SDK, or developer portal surface
+  at this time; this profile captures its identity and public web presence.
 url: https://raw.githubusercontent.com/api-evangelist/methodical-games/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +19,46 @@ x-backed-by:
 - lightspeed-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://www.methodical.com/favicon.ico
 tags:
 - Company
+- Video Games
+- Game Development
+- Multiplayer
+- Game Studio
+- Entertainment
+- Interactive Media
 apis: []
+common:
+- type: DomainSecurity
+  url: security/methodical-games-domain-security.yml
+- type: Website
+  url: https://www.methodical.com/
+- type: Careers
+  url: https://www.methodical.com/careers
+- type: Blog
+  url: https://www.methodical.com/news
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
