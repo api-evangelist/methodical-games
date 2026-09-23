@@ -2,19 +2,24 @@ generated: '2026-07-20'
 method: searched
 source: live probes of https://www.methodical.com/.well-known/*
 host: https://www.methodical.com
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
-note: >-
-  Methodical Games is a game studio marketing site with no public API surface;
-  no well-known discovery documents are published. Absence is valid recorded
-  data. No SecurityTxt/WellKnown canonical pointer is emitted since nothing was
-  found.
+note: Methodical Games is a game studio marketing site with no public API surface; no well-known discovery
+  documents are published. Absence is valid recorded data. No SecurityTxt/WellKnown canonical pointer
+  is emitted since nothing was found.
+hosts:
+- host: https://www.methodical.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
